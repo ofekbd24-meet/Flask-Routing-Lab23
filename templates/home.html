@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+	<div>
+		<h1>Chubby cats</h1>
+		{% for i in chubby %}
+			<a href="/cats/{{chubby[i]}}">
+				<img src="{{i}}">
+				<h3>{{chubby[i]}}</h3>
+			</a>
+		{% endfor %}
+	</div>
+</body>
+</html>
