@@ -42,6 +42,9 @@ def index():
 def cat_name(a):
     return render_template(f"cats.html", name=a, image=find_a(chubby, a), cute=cats[a])
 
+@app.route("/cart")
+def cart():
+    return render_template("cart.html")
 
 # Your code should be above
 
